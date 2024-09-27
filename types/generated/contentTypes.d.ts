@@ -362,22 +362,21 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiAboutPageAboutPage extends Schema.CollectionType {
+export interface ApiAboutPageAboutPage extends Schema.SingleType {
   collectionName: 'about_pages';
   info: {
     singularName: 'about-page';
     pluralName: 'about-pages';
     displayName: 'About Page';
-    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.RichText;
-    Content: Attribute.Component<'generic.generic-content', true>;
+    Title: Attribute.String;
+    Description: Attribute.Text;
     Image: Attribute.Media;
-    Title_Content: Attribute.RichText;
+    Content: Attribute.Component<'generic.generic-content', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

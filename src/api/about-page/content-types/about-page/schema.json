@@ -1,11 +1,10 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "about_pages",
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "About Page",
-    "description": ""
+    "displayName": "About Page"
   },
   "options": {
     "draftAndPublish": true
@@ -13,26 +12,25 @@
   "pluginOptions": {},
   "attributes": {
     "Title": {
-      "type": "richtext"
+      "type": "string"
     },
-    "Content": {
-      "type": "component",
-      "repeatable": true,
-      "component": "generic.generic-content"
+    "Description": {
+      "type": "text"
     },
     "Image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "Title_Content": {
-      "type": "richtext"
+    "Content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.generic-content"
     }
   }
 }

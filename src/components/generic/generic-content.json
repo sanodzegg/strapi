@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_generic_generic_contents",
+  "info": {
+    "displayName": "Generic Content",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "richtext"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Reversed": {
+      "type": "boolean"
+    }
+  }
+}
